@@ -7,6 +7,7 @@ int main(int argc, char ** argv){
 		cerr<< "Il manque un argument"<<endl;
 		return 0;
 	}
+	/// initialisation des logs
 	google::SetLogDestination(google::GLOG_INFO, "log_chifoumi");
 	google::InitGoogleLogging(argv[0]);
 	string nom=argv[1]; 
