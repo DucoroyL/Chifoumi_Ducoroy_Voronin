@@ -17,7 +17,7 @@ install(DIRECTORY ${CMAKE_BINARY_DIR}/doc/html
 DESTINATION share/doc/${CMAKE_PROJECT_NAME})
 endif()
 
-add_executable(main.out src/main.cpp src/Random.cpp)
-add_executable(main_test.out src/main_test.cpp)
+add_executable(main.out src/main.cpp src/Random.cpp src/Partie.cpp)
+add_executable(main_test.out src/main_test.cpp src/Partie_test.cpp src/Partie.cpp src/Random.cpp)
 target_link_libraries( main.out ${PKG_LIBRARIES} )
 target_link_libraries( main_test.out ${PKG_LIBRARIES} )
